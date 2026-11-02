@@ -1,0 +1,448 @@
+:root {
+
+    --main-color: rgb(136, 10, 10);
+    --hover-color: rgba(60, 60, 60, 0.88);
+
+    --text-color: #222;
+    --white: #fff;
+    --border-color: #ddd;
+
+    --navbar-bg: rgba(0,0,0,.77);
+
+
+    /* Sizes */
+    --nav-width: 80%;
+    --section-padding: 90px;
+
+    --card-radius: 18px;
+    --input-radius: 12px;
+
+    --transition: .3s ease;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-weight: 400;
+
+    overflow-x: hidden;
+
+    color: var(--text-color);
+
+    background-color: #fff;
+}
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+section {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+.logo{
+    font-weight: 800 !important;
+    letter-spacing: 2.5px !important;
+}
+.logo::first-letter{
+    font-size: 32px !important;
+    color: rgb(136, 10, 10);
+    font-weight: 900;
+    
+}
+.nav-item{
+    margin-left: 9px;
+}
+.nav-item:hover{
+    background-color: rgba(60, 60, 60, 0.882);
+    border-radius: 5px;
+}
+.active{
+    background-color: rgba(60, 60, 60, 0.882);
+    border-radius: 5px;
+    border:1px solid rgb(109, 107, 107)
+
+
+}
+
+
+.login-link {
+
+    background-color: rgba(255,255,255,.08);
+
+}
+
+.section-pad{
+    margin-top: 55px;
+}
+
+.contact-wrap {
+
+    padding-top: 40px;
+
+}
+
+.contact-title {
+
+
+    color: var(--main-color);
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+
+}
+
+.contact-description {
+
+    color: #fff;
+
+    font-size: 1rem;
+
+}
+
+
+
+
+
+
+.form-label {
+
+    font-size: .85rem;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+}
+
+
+
+.form-control,
+.form-select {
+
+
+    border: 1px solid var(--border-color);
+
+
+    padding: 13px 16px;
+
+
+    border-radius: var(--input-radius);
+
+
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+
+
+    font-size: .95rem;
+
+
+}
+
+
+
+.form-control:focus,
+.form-select:focus {
+
+
+    border-color: var(--main-color);
+
+
+    box-shadow: 0 0 0 .2rem rgba(136,10,10,.15);
+
+
+}
+
+
+
+textarea.form-control {
+
+    resize: none;
+
+}
+
+
+
+.message-label {
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+
+
+
+
+/* =====================
+        Button
+===================== */
+
+
+.send-area {
+
+    margin-top: 25px;
+
+}
+
+
+
+.btn-send {
+
+
+    background-color: var(--main-color);
+
+    color: var(--white);
+
+
+    border: none;
+
+
+    font-weight: 700;
+
+
+    padding: 14px 30px;
+
+
+    border-radius: var(--input-radius);
+
+
+    font-size: .98rem;
+
+
+    display: inline-flex;
+
+
+    align-items: center;
+
+
+    gap: 10px;
+
+
+    cursor: pointer;
+
+
+    transition: var(--transition);
+
+
+}
+
+
+
+.btn-send:hover {
+
+
+    background-color:  rgb(136, 10, 10);
+;
+
+
+    transform: translateY(-3px);
+
+
+}
+
+
+
+
+
+/* =====================
+        Cards
+===================== */
+
+
+.info-card {
+
+
+    border: 1px solid var(--border-color);
+
+
+    border-radius: var(--card-radius);
+
+
+    padding: 34px 28px;
+
+
+    height: 100%;
+
+
+    transition: var(--transition);
+
+
+}
+
+
+
+.info-card:hover {
+
+
+    transform: translateY(-6px);
+
+
+}
+
+
+
+.info-card h3 {
+
+    font-size: 1.3rem;
+
+    font-weight: 700;
+
+}
+
+
+
+.info-card p {
+
+    font-size: .92rem;
+
+    margin-bottom: 4px;
+
+}
+
+
+
+.info-card .icon-wrap {
+
+
+    width: 52px;
+
+    height: 52px;
+
+
+    border: 1px solid var(--border-color);
+
+
+    border-radius: 14px;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    justify-content: center;
+
+
+    color: var(--main-color);
+
+
+    font-size: 1.2rem;
+
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+
+
+
+/* =====================
+        Success
+===================== */
+
+
+.success-box {
+
+
+    display: none;
+
+
+    align-items: center;
+
+
+    gap: 14px;
+
+
+    padding: 16px 20px;
+
+
+    border-radius: 14px;
+
+
+    margin-top: 22px;
+
+
+    font-size: .9rem;
+
+
+}
+
+
+
+.success-box.show {
+
+
+    display: flex;
+
+
+    animation: fadeUp .5s ease;
+
+
+}
+
+
+
+
+
+@keyframes fadeUp {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.footer {
+    background-color: #000000d4;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+  }
+  .footer i {
+    transform: scale(1.5);
+    color: rgb(124, 123, 123);
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .footer i:hover {
+    color: white;
+  }

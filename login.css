@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+.nav-custom, .footer-custom {
+    background-color: rgba(33, 37, 41, 0.85);
+}
+
+
+.container{
+    margin-top: 75px !important;
+}
+.logo{
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+.logo::first-letter{
+    font-size: 32px;
+    color: rgb(136, 10, 10);
+    font-weight: 900;
+    
+}
+.nav-item{
+    margin-left: 9px;
+}
+.nav-item:hover{
+    background-color: rgba(60, 60, 60, 0.882);
+    border-radius: 5px;
+}
+.active{
+    background-color: rgba(60, 60, 60, 0.882) !important;
+    border-radius: 5px;
+    border:1px solid rgb(109, 107, 107) !important;
+}
+
+.card {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #000000d4;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+  }
+  .footer i {
+    transform: scale(1.5);
+    color: rgb(124, 123, 123);
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .footer i:hover {
+    color: white;
+  }
+
+ form button{
+    background-color: rgb(136, 10, 10) !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: 0 0 1.5px 2px rgb(136, 10, 10);
+    margin-top: 20px !important;
+}

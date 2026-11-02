@@ -1,0 +1,81 @@
+
+.search-icon{
+    left:-10px;
+    border-radius: 5px 0px 0px 5px;
+}
+.bookimg{
+    height:330px;
+    transition: all 0.1s ease;
+}
+.books{
+    width: 80%;
+}
+.background-catalog{
+    background-image: url('../images/0.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+.info{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.792),rgba(0, 0, 0, 0.578));
+}
+
+select,option{
+    cursor: pointer;
+    
+}
+
+
+.bookimg:hover {
+    cursor: pointer;
+    filter:brightness(0.8);
+}
+
+.infoBtn{
+    box-shadow: 0px 0px 3px 1px #979797;
+}
+
+.navigator{
+    width: 80%;
+}
+
+
+
+.logo{
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+.logo::first-letter{
+    font-size: 32px;
+    color: rgb(136, 10, 10);
+    font-weight: 900;
+    
+}
+.nav-item{
+    margin-left: 9px;
+}
+.nav-item:hover{
+    background-color: rgba(60, 60, 60, 0.882);
+    border-radius: 5px;
+}
+.active{
+    background-color: rgba(60, 60, 60, 0.882);
+    border-radius: 5px;
+    border:1px solid rgb(109, 107, 107);
+}
+
+.footer {
+    background-color: #000000d4;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+  }
+  .footer i {
+    transform: scale(1.5);
+    color: rgb(124, 123, 123);
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .footer i:hover {
+    color: white;
+  }

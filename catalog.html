@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/auth.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/catalog.css">
+
+</head>
+<body>
+
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg fixed-top p-0" style="background-color: rgba(0, 0, 0, 0.77);" >
+  <div class="container-fluid ">
+    <a class="logo navbar-brand text-white" href="#">Library</a>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item my-1">
+          <a class="px-3 nav-link text-white" aria-current="page" href="index.html">Home</a>
+        </li>
+        
+        <li class="nav-item my-1">
+          <a class="px-3  nav-link text-white active " href="catalog.html">Catalog</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="px-3 nav-link text-white" href="favbook.html">Fav Books</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="px-3 nav-link text-white" href="contactus.html">Contact Us</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="px-3 nav-link text-white  rounded-3" href="login.html">Login/register</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>  
+
+ <!-- background image -->
+<div class="background-catalog w-100 d-flex align-items-center"></div>
+
+<!-- search -->
+<div class="container position-relative" >
+  <div class="position-relative w-75 m-auto mt-5">
+    <input type="text" name="search" id="search" class="form-control p-3 ps-5" placeholder="Search for Book">
+    <div class="search-icon position-absolute top-50 translate-middle-y text-white bg-black p-3">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </div>
+</div>
+
+
+<!-- categories -->
+<div class="navigator container w-75 mt-5">
+  <div class="row">
+    <div class="col-6">
+      <select class="w-100 p-2 border border-secondary rounded-2 bg-black text-white" id="categorySelect">
+    </select>
+    </div>
+    <div class="col-6 mt-1">
+      <select class="w-100 p-2 border border-secondary rounded-2 bg-black text-white" id="authorSelect">
+    </select>
+    </div>
+  </div> 
+</div>
+
+
+<!-- books -->
+<div class="books container border border-2 border-secondary-subtle mt-3 rounded-2 p-3 m-auto mb-5">
+  <div class="row d-flex flex-wrap g-2 " id="box">
+          <h1 class=" text-secondary-emphasis p-4">Please Wait ...</h1>
+  </div>
+</div>
+
+
+<div class="footer">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-whatsapp"></i>
+
+</div>
+ 
+    <script src="js/catalog.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/favorites.js"></script>
+</body>
+</html>
+
+
+

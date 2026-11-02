@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/auth.js"></script>
+    <title>Book Info</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bookinfo.css">
+
+</head>
+<body>
+    <nav class="w-100 fixed-top px-4 py-2" style="background-color: rgba(0, 0, 0, 0.77);">
+        <a class="fa-solid fa-arrow-left text-white pointer-event text-decoration-none " href="catalog.html" id="backtocatalog"></a>
+    </nav>
+    <div class="w-100 mt-5 bg-light-subtle" id="bookInfo">
+    <div class="container-sm w-md-75 py-4">
+    <div class="row d-flex flex-wrap align-items-center">
+      <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+        <img 
+          src="images/fiction1.jpg" 
+          alt="Book cover" 
+          class="border border-2 border-dark-subtle img-fluid rounded"
+          id="displayedbook"
+          style="max-height: 500px; object-fit: cover;"
+        >
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="caption  px-3">
+          <h1 id="bookname">Book Name</h1>
+          <h5 class="text-muted" id="bookauthor">Author Name</h5>
+          <div class="d-flex justify-content-between col-lg-8">
+            <span class="text-muted" id="categoryname">Category</span>
+            <span class="text-muted" id="year">year</span>
+            <span class="text-muted" id="language">language</span>
+          </div>
+          
+          
+          
+          <div class="btns my-4 ">
+            <i class="heart fa-regular fa-heart "id="openheart"></i>
+            <i class="heart fa-solid fa-heart d-none text-danger" id="closeheart"></i>
+            <button class="px-3 py-2 rounded-3 border-0 bg-black text-white mx-3">Install</button>
+            <button class="px-3 py-2 rounded-3 border-0 bg-black text-white ">Read</button>
+          </div>
+          <div class="mt-2">
+            <h5>Description :</h5>
+            <p id="desription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, vel?</p>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- addreview -->
+    <div class="container addreview mt-5">
+    <h3>Rate The Book</h3>
+    <div class="container-fluid">
+        <div class="stars " id="newRatingStars">
+           <i class="starreview fa-regular fa-star star " data-value="1"></i>
+           <i class="starreview fa-regular fa-star star" data-value="2"></i>
+           <i class="starreview fa-regular fa-star star" data-value="3"></i>
+           <i class="starreview fa-regular fa-star star" data-value="4"></i>
+           <i class="starreview fa-regular fa-star star"data-value="5"></i>
+          </div>
+    </div>
+    
+            <div class="container">
+                 <div class="comment-bar ">
+            <input type="text" id="commentInput" placeholder="Write a Review">
+                <button class="send-btn rounded-circle border-0 " id="sendBtn">
+                    <i class="fa-solid fa-arrow-right text-muted "></i>
+                </button>
+            </div>    
+            </div>
+    </div>
+
+
+     <hr class="mt-3">
+
+
+    <div class="col-12 reviews mt-3 w-100  mb-3">
+        <h1>Reviews</h1>
+        <div class="container">
+    <div class="row d-flex align-items-center">
+        <div class="icons col-5 col-md-4 text-center text-md-end mt-2">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+        </div>   
+        <div class="progress col-7 col-md-8 mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 5%"></div>  
+        </div>
+    </div>    
+    <div class="row d-flex align-items-center">
+        <div class="icons col-5 col-md-4 text-center text-md-end mt-2">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+        </div>   
+        <div class="progress col-7 col-md-8 mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 10%"></div>  
+        </div>
+    </div>    
+    <div class="row d-flex align-items-center">
+        <div class="icons col-5 col-md-4 text-center text-md-end mt-2">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+        </div>   
+        <div class="progress col-7 col-md-8 mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 15%"></div>  
+        </div>
+    </div>    
+    <div class="row d-flex align-items-center">
+        <div class="icons col-5 col-md-4 text-center text-md-end mt-2">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+        </div>   
+        <div class="progress col-7 col-md-8 mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 20%"></div>  
+        </div>
+    </div>    
+    <div class="row d-flex align-items-center">
+        <div class="icons col-5 col-md-4 text-center text-md-end mt-2">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+        </div>   
+        <div class="progress col-7 col-md-8 mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 50%"></div>  
+        </div>
+    </div>    
+</div>
+</div>
+<div class="usersreviews mb-3" id="reviewsList">
+
+
+      <div class="rev1 border border-1 rounded-2 w-md-75 py-2 mt-3 px-3">
+            <img src="images/person.jpg" width="80px" height="80px" class="rounded-circle mb-2 border border-1 border-secondary-subtle" alt="" >
+            <h6>Jennifer Miller</h6>
+            <p>This book completely pulled me in from page one. The writing is smooth and engaging, and I honestly didn't want to put it down. Highly recommend it to anyone looking for a great read.</p>
+            <div class="rewstar">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+            </div>
+        </div>
+        
+      <div class="rev1 border border-1 rounded-2 w-md-75 py-2 mt-3 px-3">
+            <img src="images/person.jpg" width="80px" height="80px" class="rounded-circle mb-2 border border-1 border-secondary-subtle" alt="" >
+            <h6> David Anderson</h6>
+            <p>I loved how clear and accessible the writing was, without ever feeling overcomplicated. This is exactly the kind of book I'd recommend to someone wanting something light but meaningful.</p>
+            <div class="rewstar">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-regular fa-star star"></i>
+            </div>
+        </div>
+      <div class="rev1 border border-1 rounded-2 w-md-75 py-2 mt-3 px-3">
+            <img src="images/person.jpg" width="80px" height="80px" class="rounded-circle mb-2 border border-1 border-secondary-subtle" alt="" >
+            <h6>Michael Thompson</h6>
+            <p>One of those books that stays with you after you finish. The ideas are well thought out and the content is rich — I feel like I genuinely took something valuable away from it.</p>
+            <div class="rewstar">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+            </div>
+        </div>
+      <div class="rev1 border border-1 rounded-2 w-md-75 py-2 mt-3 px-3">
+            <img src="images/person.jpg" width="80px" height="80px" class="rounded-circle mb-2 border border-1 border-secondary-subtle" alt="" >
+            <h6>Ashley Rodriguez</h6>
+            <p>A fantastic reading experience overall. It strikes the perfect balance between being entertaining and thought-provoking. It exceeded all my expectations.</p>
+            <div class="rewstar">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+            </div>
+        </div>
+        </div>
+      
+</div>
+
+<script src="js/bookinfo.js"></script>
+<script src="js/favorites.js"></script>
+</body>
+</html>
+
+
+
+

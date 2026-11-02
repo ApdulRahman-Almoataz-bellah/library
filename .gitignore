@@ -1,0 +1,10 @@
+# Visual Studio
+.vs/
+*.user
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+desktop.ini

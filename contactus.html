@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/auth.js"></script>
+<title>  LIBRARY  </title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/contactus.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg fixed-top p-0" style="background-color: rgba(0, 0, 0,0.8);" >
+  <div class="container-fluid ">
+    <a class="logo navbar-brand text-white" href="#">Library</a>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item my-1">
+          <a class="px-3 nav-link text-white" aria-current="page" href="index.html">Home</a>
+        </li>
+        
+        <li class="nav-item my-1">
+          <a class="px-3  nav-link text-white" href="catalog.html">Catalog</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="px-3 nav-link text-white" href="favbook.html">Fav Books</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="px-3 nav-link text-white active" href="contactus.html">Contact Us</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="px-3 nav-link text-white  rounded-3" href="login.html">Login/register</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+
+
+
+
+<!-- Contact Section -->
+
+
+<section class="section-pad " id="contact">
+
+<div class="container">
+
+
+<div class="row justify-content-center reveal" id="formSection">
+
+
+<div class="col-lg-9">
+
+
+<div class="contact-wrap">
+
+
+<h2 class="contact-title mb-4">
+    Contact Our Library
+</h2>
+
+
+
+
+
+
+
+
+<form id="contactForm" novalidate>
+
+
+<div class="row g-3">
+
+
+
+<div class="col-md-6">
+
+<label class="form-label" for="name">
+    Full Name
+</label>
+
+
+<input 
+type="text"
+class="form-control"
+id="name"
+placeholder="Enter your full name"
+required
+minlength="3">
+
+
+<div class="invalid-feedback">
+Please enter a valid name with at least 3 characters.
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="col-md-6">
+
+<label class="form-label" for="email">
+Email Address
+</label>
+
+
+<input 
+type="email"
+class="form-control"
+id="email"
+dir="ltr"
+placeholder="example@email.com"
+required>
+
+
+<div class="invalid-feedback">
+Please enter a valid email address.
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-md-6">
+
+<label class="form-label" for="phone">
+Phone Number (Optional)
+</label>
+
+
+<input 
+type="tel"
+class="form-control"
+id="phone"
+dir="ltr"
+placeholder="+20 1XXXXXXXXX"
+pattern="^01[0-9]{9}$">
+
+
+<div class="invalid-feedback">
+Please enter a valid 11-digit Egyptian phone number.
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-md-6">
+
+<label class="form-label" for="subject">
+Subject
+</label>
+
+
+<select class="form-select" id="subject" required>
+
+
+<option value="" selected disabled>
+Select a subject
+</option>
+
+
+<option>Book Inquiry</option>
+<option>Book Reservation</option>
+<option>Book Purchase</option>
+<option>Recommend a Book</option>
+<option>Technical Support</option>
+<option>Feedback or Complaint</option>
+<option>Other</option>
+
+
+</select>
+
+
+
+<div class="invalid-feedback">
+Please select a subject.
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-12">
+
+
+<label class="form-label message-label" for="message">
+
+<span>
+Your Message
+</span>
+
+
+<span class="char-count">
+<span id="charCount">0</span>/500
+</span>
+
+
+</label>
+
+
+
+<textarea
+class="form-control"
+id="message"
+rows="5"
+maxlength="500"
+placeholder="Write your message here..."
+required
+minlength="10"></textarea>
+
+
+
+<div class="invalid-feedback">
+Please enter a message with at least 10 characters.
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="send-area">
+
+
+<button type="submit" class="btn-send" id="submitBtn">
+
+<span id="btnText">
+Send Message
+</span>
+
+<i class="fa-solid fa-paper-plane"></i>
+
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="success-box" id="successBox">
+
+<i class="fa-solid fa-circle-check"></i>
+
+
+
+</div>
+
+
+
+
+</form>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- Information Cards -->
+
+
+<section class="section-pad pb-0 mt-5">
+
+
+<div class="container">
+
+
+<div class="row g-4 reveal" id="infoCards">
+
+
+
+<div class="col-md-4">
+
+<div class="info-card">
+
+
+<div class="icon-wrap">
+
+<i class="fa-solid fa-phone"></i>
+
+</div>
+
+
+<h3>
+Call Us
+</h3>
+
+
+<p class="fw-semibold">
++20 1152142845
+</p>
+
+
+<p class="text-muted">
+Saturday – Thursday
+<br>
+10:00 AM – 6:00 PM
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="col-md-4">
+
+<div class="info-card">
+
+
+<div class="icon-wrap">
+
+<i class="fa-solid fa-envelope"></i>
+
+</div>
+
+
+<h3>
+Email Us
+</h3>
+
+
+<p class="fw-semibold">
+library@gmail.com
+</p>
+
+
+<p class="text-muted">
+For inquiries and customer support.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="col-md-4">
+
+<div class="info-card">
+
+
+<div class="icon-wrap">
+
+<i class="fa-solid fa-location-dot"></i>
+
+</div>
+
+
+<h3>
+Visit Us
+</h3>
+
+
+<p class="fw-semibold">
+Heliopolis, Cairo
+</p>
+
+
+<p class="text-muted">
+Building 14, Third Floor
+</p>
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+<div class="footer">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-whatsapp"></i>
+
+</div>
+<script src="js/contactus.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
